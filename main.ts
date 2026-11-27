@@ -30,6 +30,7 @@ function resolveOutputDir(): string {
 }
 
 validateEntry(ENTRY);
+console.log("Entry passed the length gate and is ready to submit.");
 
 const outDir = resolveOutputDir();
 writeFileSync(`${outDir}/entry.txt`, ENTRY + "\n", "utf8");
